@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color1: #15FF00;
+    --color2: #AE50F7;
+    --bgColor: #1E1E1E;
+    --txtColor: #c8d2eb;
+
+    --titleFont: 'Libertinus Sans' , serif;
+    --textFont: 'Work Sans' , sans-serif;
+}
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    color: var(--txtColor);
+}
+
+body{
+    background-color: var(--bgColor);
+    min-height: 100vh;
+    padding: 10px;
+}
+
+main#global-container{
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+    nav.navbar{
+        width: 100%;
+        /* position: absolute;
+        top: -40px; */
+    }
+    
+    div.navbar-container{
+        display: flex;
+        justify-content: space-around;
+        
+        border: 1px solid var(--color2);
+        border-radius: 1px;
+    }
+    
+        a.navbar-link{
+            font-family: var(--titleFont);
+            font-variant: small-caps;
+            padding: 10px;
+
+            transition: 150ms ease-out;
+        }
+            
+            a.navbar-link i.bi{
+                color: var(--color2);
+                text-decoration: none;
+            }
+
+            a.navbar-link span.link-label{
+                color: currentColor;
+            }
+                   
+            a.navbar-link:hover{
+                filter: saturate(1.25);
+                scale: 1.05;
+                transform: rotate(-.5deg);
+                color: var(--color2);
+            }
