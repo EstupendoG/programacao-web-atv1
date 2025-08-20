@@ -5,8 +5,9 @@
     --color1: #15FF00;
     --color2: #AE50F7;
     --color3: #FFD705;
-    --bgColor1: #1E1E1E;
-    --bgColor2: #222121;
+    --bgColor1: #222121;
+    --bgColor2: #1D1A2F;
+    --bgColor3: #3B2D55;
     --txtColor1: #c8d2eb;
     --txtColor2: #C99EC7;
     --txtColor3: #EC7CEC;
@@ -36,17 +37,8 @@ body{
     display: flex;
 }
 
-main#global-container{
-    min-height: 100vh;
-    padding: 20px 30px;
-    
-    flex-grow: 1;
-
-    position: relative;
-}
-
-    nav.navbar {
-        background-color: var(--bgColor2);
+    nav#navbar {
+        background-color: var(--bgColor1);
         width: fit-content;
         height: 100vh;
         padding: 6px 0;
@@ -125,6 +117,17 @@ main#global-container{
                         transition: all 350ms;
                     }
 
+                    a.pagina-atual.nav-link {
+                        color: var(--txtColor1);
+
+                        scale: 1.05;
+
+                        pointer-events: none;
+                        cursor: auto;
+                        animation: pulse 10s infinite;
+                    }
+
+
                         a#pagina-inicial.nav-link::after {
                             content: 'Página Inicial';
                         }
@@ -140,3 +143,87 @@ main#global-container{
                         a#contato.nav-link::after {
                             content: 'Entre em Contato!';
                         }
+    
+main#global-container{
+    padding: 20px 30px;
+    min-height: 100vh;
+    
+    flex-grow: 1;
+
+    position: relative;
+}
+
+    header#header{
+        width: 100%;
+        padding-bottom: 40px; 
+
+        position: sticky;
+        top: -35px;
+
+        transition: top 200ms ease-out;
+    }
+
+        header#header:hover{
+            top: 0;
+        }
+
+            div.header-container{
+                background-color: var(--bgColor1);
+                padding: 8px 25px;
+
+                color: var(--color2);
+
+                border-bottom: 1px solid currentColor;
+
+                display: flex;
+                align-items: center;
+                gap: 30px;  
+            }
+
+            h1.header-title{
+                color: currentColor;
+                font-size: 1.05em;
+                font-family: var(--textFont);
+                font-weight: 400;
+            }
+
+            nav.header-links{
+                color: currentColor;
+
+                display: flex;
+                gap: 2px;
+            }
+            
+                a.header-link{
+                    padding: 4px 8px;
+
+                    color: currentColor;
+                    font-size: .9rem;
+
+                    border-radius: 5px;
+
+                    transition: all 100ms ease-out;
+                }
+
+                    a.header-link:hover{
+                        background-color: var(--bgColor3);
+                        color: var(--color1);
+                    }
+
+
+
+
+
+@keyframes pulse {
+    0% {
+
+    }
+    50% {
+        filter: brightness(5);
+        color: var(--color2);
+        text-shadow: 0px 0px 10px currentColor;
+    }
+    100% {
+
+    }
+}

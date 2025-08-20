@@ -1,0 +1,37 @@
+main#global-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header#introduction-header{
+
+}
+
+    div.intro-titles{
+    }
+
+        .intro-name{
+            font-size: 1.3em;
+            font-weight: 400;
+            font-family: var(--titleFont);
+        }
+
+            .intro-name strong{
+                color: var(--color2);
+                font-family: var(--titleFont);
+            }
+
+        .intro-career{
+            font-size: 2.5em;
+            font-weight: 600;
+            font-family: var(--titleFont);
+        }
+
+            .intro-career strong{
+                letter-spacing: -2px;
+                color: var(--color1);
+                font-weight: 600;
+                font-size: .95em;
+            }
+
