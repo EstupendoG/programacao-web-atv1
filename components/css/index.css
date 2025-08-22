@@ -5,33 +5,58 @@ main#global-container{
 }
 
 header#introduction-header{
-
+    margin: 0px 75px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
 }
-
-    div.intro-titles{
+    
+    div.intro-text.container{
+        grid-column: 1;
     }
 
-        .intro-name{
-            font-size: 1.3em;
-            font-weight: 400;
-            font-family: var(--titleFont);
+        div.intro-titles{
         }
 
-            .intro-name strong{
-                color: var(--color2);
+            .intro-name{
+                font-size: 1.3em;
+                font-weight: 400;
                 font-family: var(--titleFont);
             }
 
-        .intro-career{
-            font-size: 2.5em;
-            font-weight: 600;
-            font-family: var(--titleFont);
-        }
+                .intro-name strong{
+                    color: var(--color2);
+                    font-family: var(--titleFont);
+                }
 
-            .intro-career strong{
-                letter-spacing: -2px;
-                color: var(--color1);
+            .intro-career{
+                margin: 5px 0px 20px;
+                max-width: fit-content;
+                padding: 3px 30px;
+                background-color: var(--bgColor3);
+                font-family: var(--titleFont);
+                text-shadow: 5px 0px 0px var(--bgColor1);
+                font-size: 3em;
                 font-weight: 600;
-                font-size: .95em;
+                border-left: 10px solid var(--color2);
             }
 
+                .intro-career strong{
+                    letter-spacing: -2px;
+                    color: var(--color1);
+                    font-weight: 600;
+                    font-family: var(--txtFont) !important;
+                }
+    
+        p.intro-text{
+            font-size: 1em;
+        }
+
+    div.intro-img-container{
+        grid-column: 2;
+        width: fit-content;
+    }
+
+        .intro-img{
+            width: 100%;
+        }
