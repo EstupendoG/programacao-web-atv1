@@ -121,12 +121,11 @@ body{
 
                     a.pagina-atual.nav-link {
                         color: var(--txtColor1);
-
-                        scale: 1.05;
+                        font-weight: 800;
 
                         pointer-events: none;
                         cursor: auto;
-                        animation: pulse 5s infinite;
+                        animation: pulse 10s ease-in infinite;
                     }
 
 
@@ -225,15 +224,16 @@ main#global-container{
 
 
 @keyframes pulse {
-    0% {
-
+    50%{
+        color: var(--txtColor1);
+        filter: brightness(2);
+        text-shadow: 0px 0px 10px currentColor;
     }
-    50% {
-        filter: brightness(5);
-        color: var(--color2);
-        text-shadow: 0px 0px 7px currentColor;
-    }
-    100% {
+}
 
+@keyframes slide-fade{
+    from{
+        transform: translate(20px, 0px);
+        opacity: 0;
     }
 }
