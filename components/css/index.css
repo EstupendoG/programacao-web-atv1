@@ -1,11 +1,12 @@
 main#global-container{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
 header#introduction-header{
-    margin: 0px 100px;
+    margin: 0 100px;
+    max-width: 800px;
 
     display: grid;
     grid-template-rows: repeat(2, max-content);
@@ -53,7 +54,7 @@ header#introduction-header{
 
             border-left: 10px solid var(--color2);
 
-            animation: shine1 2s forwards;
+            animation: shine1 1.5s forwards;
         }
 
             #intro-title .intro-career strong{
@@ -72,7 +73,7 @@ header#introduction-header{
 
         /* TEXTOS */
         #intro-content div.intro-texts{
-            animation: slide-fade 2s ease-in forwards;
+            animation: slide-fade 1s ease-out forwards;
         }
         
             /* LINKS EM TAGS */
@@ -105,7 +106,8 @@ header#introduction-header{
                         color: white;
                         animation: shine2 1s infinite;
                     }
-                    .external-links a.ext-link:active{
+                    .external-links a.ext-link:focus{
+                        color: white;
                         background: var(--color2);
                         box-shadow: 0px 0px 10px var(--color2);
                     }
@@ -153,7 +155,7 @@ header#introduction-header{
                         scale: 1.03;
                     }
                     .internal-link button.int-link:active{
-                        color: var(--color3);
+                        color: var(--txtColor1);
                         
                         transition: none;
                         scale: .95;
@@ -176,7 +178,7 @@ header#introduction-header{
             transform: translate(30px, 10px);
             scale: 1.05;
 
-            animation: border 2s forwards;
+            animation: border 1.5s forwards;
         }
             .intro-image img.img{
                 background-color: red;
