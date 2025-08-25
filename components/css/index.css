@@ -1,11 +1,11 @@
 main#global-container{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 
 header#introduction-header{
-    margin: 0 100px;
+    margin: 50px 100px 0;
     max-width: 800px;
 
     display: grid;
@@ -106,7 +106,7 @@ header#introduction-header{
                         color: white;
                         animation: shine2 1s infinite;
                     }
-                    .external-links a.ext-link:focus{
+                    .external-links a.ext-link:active{
                         color: white;
                         background: var(--color2);
                         box-shadow: 0px 0px 10px var(--color2);
