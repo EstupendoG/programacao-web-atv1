@@ -34,9 +34,12 @@
 
 body{
     background-color: var(--bgColor1);
+    max-width: 1500px;
+    margin: 0 auto;
     
     display: grid;
     grid-template-columns: min-content 1fr;
+
 }
 
     nav#navbar {
@@ -212,8 +215,9 @@ main#global-container{
 
         header#header .header-container::before{
             content: '';
-            height: 100%;
             background-color: transparent;
+            height: 100%;
+            
             position: absolute;
             left: 0;
             right: 0;
