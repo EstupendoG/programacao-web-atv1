@@ -73,7 +73,7 @@ header#introduction-header{
 
         /* TEXTOS */
         #intro-content div.intro-texts{
-            animation: slide-fade 1s ease-out forwards;
+            animation: slide-fade 2s ease-out forwards;
         }
         
             /* LINKS EM TAGS */
