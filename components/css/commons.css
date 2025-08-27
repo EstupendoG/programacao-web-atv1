@@ -40,6 +40,7 @@ body{
     display: grid;
     grid-template-columns: min-content 1fr;
 
+    overflow-x: hidden;
 }
 
     nav#navbar {
@@ -163,6 +164,7 @@ main#global-container{
 
         position: sticky;
         top: -35px;
+        z-index: 100;
 
         transition: top 200ms ease-out;
     }
@@ -214,7 +216,7 @@ main#global-container{
                     color: var(--color1);
                 }
 
-        header#header .header-container::before{
+        header#header .header-container::after{
             content: '';
             background-color: transparent;
             height: 100%;
@@ -241,5 +243,24 @@ main#global-container{
     from{
         transform: translate(20px, 0px);
         opacity: 0;
+    }
+}
+
+@keyframes shine1 {
+    from{
+        background-position: left;
+
+        border-left: 10px solid var(--bgColor3);
+    }
+    to{
+        background-position: right;
+
+        border-left: 10px solid var(--color2);
+    }
+}
+
+@keyframes shine2 {
+    from{
+        background-position: left;
     }
 }

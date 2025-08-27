@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/commonsContent.css">
     <link rel="stylesheet" href="css/commons.css">
     <title>Meu Site</title>
 </head>
@@ -34,22 +36,45 @@
     </nav>
 
     <main id="global-container">
-        
-        <header id="header">
-            <div class="header-container">
-                <h1 class="header-title">Sobre</h1>
-                <nav class="header-links">
-                    <a class="header-link" href="">Link</a>
-                    <a class="header-link" href="">Link</a>
-                    <a class="header-link" href="">Link</a>
-                </nav>
-            </div>
-            <div class="header-collision">
-            </div>
+
+        <!-- <input type="checkbox" id="skip-overlay-btn">
+        <label class="title-overlay" for="skip-overlay-btn">
+            <h1 class="title">Contato</h1>
+        </label> -->
+
+        <div class="main-title">
+            <h1 class="title">Contato</h1>
+        </div>
+
+        <form  class="form-contact">
+            <div class="top-inputs">
+                <div class="input-area">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Digite seu Nome">
+                </div>
     
-        </header>
+                <div class="input-area">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Digite seu Email" required>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <label for="mensagem">Mensagem</label>
+                <textarea name="" id="mensagem" placeholder="Digite sua Mensagem :)" required></textarea>
+            </div>
+            
+            <button class="submit-button">
+                Enviar Mensagem
+                <i class="bi bi-chevron-right"></i>
+            </button>
+        </form>
+        
+
+
 
     </main>
+    
     
 </body>
 </html>

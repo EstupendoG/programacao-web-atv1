@@ -1,0 +1,71 @@
+form.form-contact {
+    margin: 50px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.top-inputs{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+}
+
+    div.input-area {
+        display: flex;
+        flex-direction: column;
+    }
+
+        div.input-area label {
+            padding: 10px 3px;
+        }
+
+        div.input-area input,
+        div.input-area textarea {
+            background-color: var(--bgColor3);
+            padding: 5px 10px;
+
+            resize: vertical;
+        }
+
+            div.input-area input,
+            div.input-area textarea {
+                background-color: var(--bgColor3);
+                padding: 5px 10px;
+
+                resize: vertical;
+            }
+
+    button.submit-button {
+        padding: 7px 25px;
+
+        border: 1px solid currentColor;
+        border-radius: 3px;
+
+        color: var(--color2);
+        font-size: 1em;
+        text-shadow: 
+            0 0 5px black;
+
+        transition: all 100ms ease-in;
+        cursor: pointer;
+    }
+        button.submit-button:hover{
+            color: var(--color1);
+            text-shadow: 0px 0px 15px currentColor;
+            
+            box-shadow: 
+                0 0 5px currentColor;
+
+            filter: brightness(1);
+            scale: 1.03;
+        }
+        button.submit-button:active{
+            color: var(--txtColor1);
+            
+            transition: none;
+            scale: .95;
+        }
+        button.submit-button i{
+            color: currentColor;
+        }
+    

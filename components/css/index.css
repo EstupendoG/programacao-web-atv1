@@ -43,7 +43,6 @@ header#introduction-header{
                 ) 
                 var(--bgColor3);
             background-size: 500% 100%;
-            background-position: right;
 
             max-width: fit-content;
             padding: 3px 30px;
@@ -51,8 +50,6 @@ header#introduction-header{
             font-size: 3em;
             font-family: var(--titleFont);
             font-weight: 600;
-
-            border-left: 10px solid var(--color2);
 
             animation: shine1 1.5s forwards;
         }
@@ -190,22 +187,6 @@ header#introduction-header{
                 border-radius: 5px;
             }
 
-
-
-@keyframes shine1 {
-    from{
-        background-position: left;
-        margin-left: 10px;
-
-        border-left: 10px solid var(--bgColor3);
-    }
-}
-
-@keyframes shine2 {
-    from{
-        background-position: left;
-    }
-}
 
 @keyframes border {
     0%{
