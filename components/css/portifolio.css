@@ -1,0 +1,17 @@
+article.big-panel div.content{
+    display: flex;
+    gap: 20px;
+}
+
+    article.big-panel div.img{
+        max-width: 500px;
+    }
+    
+        article.big-panel div.img img{
+            width: 100%;
+            transition: all 200ms;
+        }
+
+            article.big-panel div.img img:hover{
+                scale: 1.1;
+            }

@@ -264,3 +264,136 @@ main#global-container{
         background-position: left;
     }
 }
+
+
+
+
+
+@media (max-width:700px) {
+
+    body{
+        grid-template-columns: 1fr;
+    }
+
+        nav#navbar {
+            height: fit-content;
+            max-width: 400px;
+            width: 100%;
+            padding: 6px;
+            margin: 0 auto;
+
+            position: fixed;
+            top: auto;
+            bottom: 20px;
+            right: 0;
+            
+            border-right: none;
+            border: 1px solid currentColor;
+            border-radius: 3px;
+            box-shadow: 
+                0px 0px 10px -3px var(--color2),
+                0px 0px 50px rgba(0, 0, 0, 0.1);
+        }
+
+            .navbar-container {
+                flex-direction: row;                
+            }
+
+                .navbar-container > div {
+                    flex-direction: row;
+                }
+
+                a.nav-link {
+                    padding: 2px 10px;
+
+                    font-size: 1.3em;
+                }
+
+                    a.nav-link::after {
+                        content: '';
+                    }
+        
+    main#global-container{
+    }
+
+        header#header{
+            width: 100%;
+            
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+
+            position: fixed;
+            top: 0;
+        }
+
+            div.header-container{
+                padding: 8px 100px;
+
+                gap: 30px;  
+            }
+
+            h1.header-title{
+                font-size: 1.05em;
+                font-weight: 400;
+            }
+
+            nav.header-links{
+                gap: 2px;
+            }
+            
+                a.header-link{
+                    padding: 4px 8px;
+
+                    font-size: .9rem;
+
+                    border-radius: 5px;
+                }
+
+            header#header .header-container::after{
+                content: '';
+                background-color: transparent;
+                height: 0;
+            }
+
+
+
+
+
+    @keyframes pulse {
+        50%{
+            color: var(--txtColor1);
+            filter: brightness(2);
+            text-shadow: 0px 0px 10px currentColor;
+        }
+    }
+
+    @keyframes slide-fade{
+        from{
+            transform: translate(20px, 0px);
+            opacity: 0;
+        }
+    }
+
+    @keyframes shine1 {
+        from{
+            background-position: left;
+
+            border-left: 5px solid var(--bgColor3);
+        }
+        to{
+            background-position: right;
+
+            border-left: 5px solid var(--color2);
+        }
+    }
+
+    @keyframes shine2 {
+        from{
+            background-position: left;
+        }
+    }
+
+
+
+
+    
+}

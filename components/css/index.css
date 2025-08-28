@@ -143,10 +143,11 @@ header#introduction-header{
                 }
                     .internal-link button.int-link:hover{
                         color: var(--color1);
-                        text-shadow: 0px 0px 15px currentColor;
+                        text-shadow: 0px 0px 2px currentColor;
                         
                         box-shadow: 
-                            0 0 5px currentColor;
+                            0 0 10px -3px currentColor,
+                            inset 0 0 10px -3px currentColor;
 
                         filter: brightness(1);
                         scale: 1.03;
@@ -178,7 +179,6 @@ header#introduction-header{
             animation: border 1.5s forwards;
         }
             .intro-image img.img{
-                background-color: red;
                 width: 250px;
                 height: 250px;
 
@@ -213,4 +213,218 @@ header#introduction-header{
         transform: translate(0px, 0px);
         scale: 1;
     }
+}
+
+@media (max-width: 950px) {
+
+    .intro-image img.img{
+        width: 150px;
+        height: 150px;
+        position: relative;
+
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    header#introduction-header{
+        margin: 20px 100px 0;
+    }
+
+    /* ---= TÍTULOS =--- */
+        section#intro-title{
+
+        }
+
+            #intro-title .intro-name{
+                margin-bottom: 10px;
+                text-align: center;
+
+                font-size: 1.2em;
+            }
+
+            /* FrontEnd Dev */
+            #intro-title .intro-career{
+                margin: 0 auto;
+                font-size: 2.5em;
+            }
+        
+    /* ---= CONTEÚDO =--- */
+        section#intro-content{
+            display: flex;
+            flex-wrap: wrap-reverse;
+            gap: 5px;
+        }
+
+                /* LINKS EM TAGS */
+                .intro-texts div.external-links{
+                    margin-top: 0px;
+                    justify-content: center;
+                    gap: 10px;
+                }
+                    .external-links a.ext-link{
+                        padding: 3px 5px;
+
+                        font-size: 1rem;
+                        
+                        border-left: 3px solid var(--color2);
+                    }
+
+                /* PARAGRAFO DA INTRODUÇÃO */
+                .intro-texts p.text{
+                    margin-top: 20px;
+                    font-size: .9em;
+                    text-align: center;
+                }
+
+                /* BOTÃO CALL TO ACTION */
+                .intro-texts a.internal-link{
+                    width: fit-content;
+                    margin: 20px auto 0;
+                }
+                    .internal-link button.int-link{
+                        padding: 7px 25px;
+
+                        font-size: .9em;
+                    }
+
+            /* IMAGEM */
+            #intro-content div.intro-image{
+                margin: 20px auto;
+            }
+                .intro-image img.img{
+                    width: 300px;
+                    height: 300px;
+                }
+
+
+    @keyframes border {
+        0%{
+            box-shadow:
+                9px 9px var(--bgColor2);
+            opacity: 0%;
+        }
+        50%{
+            box-shadow:
+                -5px -5px var(--bgColor1),
+                -6px -6px var(--color1),
+                6px 6px var(--bgColor3),
+                9px 9px var(--bgColor2);
+            opacity: 100%;
+        }
+        100%{
+            box-shadow:
+                -5px -5px var(--bgColor1),
+                -6px -6px var(--color1),
+                3px 3px var(--color2),
+                6px 6px var(--bgColor3),
+                9px 9px var(--bgColor2);
+                
+            transform: translate(0px, 0px);
+            scale: 1;
+        }
+    }
+    
+}
+
+@media (max-width:600px) {
+
+    header#introduction-header{
+        margin: 20px 120px 0;
+    }
+
+    /* ---= TÍTULOS =--- */
+        section#intro-title{
+
+        }
+
+            #intro-title .intro-name{
+                margin-bottom: 2px;
+                text-align: start;
+
+                font-size: 1.1em;
+            }
+
+            /* FrontEnd Dev */
+            #intro-title .intro-career{
+                max-width: 100%;
+                padding: 3px;
+
+                font-size: 2em;
+                text-align: center;
+            }
+        
+    /* ---= CONTEÚDO =--- */
+
+                /* LINKS EM TAGS */
+                .intro-texts div.external-links{
+                    justify-content: start;
+                    gap: 10px;
+                }
+                    .external-links a.ext-link{
+                        padding: 3px 5px;
+
+                        font-size: .85rem;
+                        font-weight: 300;
+                    }
+
+                /* PARAGRAFO DA INTRODUÇÃO */
+                .intro-texts p.text{
+                    margin-top: 15px;
+                    font-size: .9em;
+                    text-align: start;
+
+                    line-height: 17px;
+                }
+
+                /* BOTÃO CALL TO ACTION */
+                .intro-texts a.internal-link{
+                    width: 100%;
+                    margin: 15px 0;
+                }
+                    .internal-link button.int-link{
+                        width: 100%;
+                        padding: 7px 25px;
+
+                        font-size: .95em;
+                    }
+
+            /* IMAGEM */
+            #intro-content div.intro-image{
+                margin: 20px auto 10px;
+            }
+                .intro-image img.img{
+                    width: 300px;
+                    height: 300px;
+                }
+
+
+    @keyframes border {
+        0%{
+            box-shadow:
+                9px 9px var(--bgColor2);
+            opacity: 0%;
+        }
+        50%{
+            box-shadow:
+                -5px -5px var(--bgColor1),
+                -6px -6px var(--color1),
+                6px 6px var(--bgColor3),
+                9px 9px var(--bgColor2);
+            opacity: 100%;
+        }
+        100%{
+            box-shadow:
+                -5px -5px var(--bgColor1),
+                -6px -6px var(--color1),
+                3px 3px var(--color2),
+                6px 6px var(--bgColor3),
+                9px 9px var(--bgColor2);
+                
+            transform: translate(0px, 0px);
+            scale: 1;
+        }
+    }
+    
 }
